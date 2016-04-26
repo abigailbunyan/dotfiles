@@ -4,3 +4,5 @@
 	signingkey = 0xB5EBF0A57403BEE4
 [commit]
 	gpgsign = true
+[push]
+	default = simple
