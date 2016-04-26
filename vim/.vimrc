@@ -9,3 +9,5 @@ colorscheme solarized
 let g:lightline = {
       \ 'colorscheme': 'solarized',
       \ }
+
+set pastetoggle=<F2>
