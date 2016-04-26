@@ -1,0 +1,6 @@
+[user]
+	name = Abigail Bunyan
+	email = abigail.bunyan@microsoft.com
+	signingkey = 0xB5EBF0A57403BEE4
+[commit]
+	gpgsign = true
