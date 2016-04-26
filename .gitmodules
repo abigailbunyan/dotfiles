@@ -19,12 +19,12 @@
 [submodule "vim/.vim/bundle/vim-repeat"]
 	path = vim/.vim/bundle/vim-repeat
 	url = git://github.com/tpope/vim-repeat.git
-[submodule "vim/.vim/bundle/vim-flagship"]
-	path = vim/.vim/bundle/vim-flagship
-	url = git://github.com/tpope/vim-flagship.git
 [submodule "vim/.vim/bundle/ctrlp.vim"]
 	path = vim/.vim/bundle/ctrlp.vim
 	url = git://github.com/kien/ctrlp.vim.git
 [submodule "vim/.vim/bundle/a.vim"]
 	path = vim/.vim/bundle/a.vim
 	url = git://github.com/vim-scripts/a.vim.git
+[submodule "vim/.vim/bundle/lightline.vim"]
+	path = vim/.vim/bundle/lightline.vim
+	url = git://github.com/itchyny/lightline.vim
