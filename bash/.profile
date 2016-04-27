@@ -17,6 +17,6 @@ GPG_TTY=$(tty)
 export GPG_TTY
 
 if which vim > /dev/null ; then
-    VISUAL=vim
-    EDITOR=vim
+    export VISUAL=vim
+    export EDITOR=vim
 fi
