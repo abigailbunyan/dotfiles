@@ -36,3 +36,5 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_c_clang_check_post_args = ""
 let g:syntastic_c_checkers = [ 'clang_check', 'clang_tidy' ]
+let g:syntastic_cpp_clang_check_post_args = ""
+let g:syntastic_cpp_checkers = [ 'clang_check', 'clang_tidy' ]
