@@ -37,3 +37,6 @@
 [submodule "xcompose/.local/share/xcompose"]
 	path = xcompose/.local/share/xcompose
 	url = git://github.com/kragen/xcompose.git
+[submodule "vim/.vim/bundle/vim-trailing-whitespace"]
+	path = vim/.vim/bundle/vim-trailing-whitespace
+	url = git://github.com/bronson/vim-trailing-whitespace.git
