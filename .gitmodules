@@ -34,3 +34,6 @@
 [submodule "vim/.vim/bundle/syntastic"]
 	path = vim/.vim/bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
+[submodule "xcompose/.local/share/xcompose"]
+	path = xcompose/.local/share/xcompose
+	url = git://github.com/kragen/xcompose.git
