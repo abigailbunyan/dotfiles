@@ -20,3 +20,6 @@ if which vim > /dev/null ; then
     export VISUAL=vim
     export EDITOR=vim
 fi
+# Ubuntu make installation of Ubuntu Make binary symlink
+PATH=/home/abigail/.local/share/umake/bin:$PATH
+
