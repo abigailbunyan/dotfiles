@@ -16,7 +16,7 @@ let g:lightline = {
       \   'right': [
       \     [ 'syntastic', 'lineinfo' ],
       \     ['percent'],
-      \     [ 'fileformat', 'fileencoding', 'filetype' ],
+      \     [ 'spacing', 'fileformat', 'fileencoding', 'filetype' ],
       \   ],
       \ },
       \ 'component_expand': {
@@ -24,6 +24,9 @@ let g:lightline = {
       \ },
       \ 'component_type': {
       \   'syntastic': 'error',
+      \ },
+      \ 'component_function': {
+      \   'spacing': 'LightLineSpacing',
       \ },
       \ }
 
@@ -38,3 +41,11 @@ let g:syntastic_c_clang_check_post_args = ""
 let g:syntastic_c_checkers = [ 'clang_check', 'clang_tidy' ]
 let g:syntastic_cpp_clang_check_post_args = ""
 let g:syntastic_cpp_checkers = [ 'clang_check', 'clang_tidy' ]
+
+function! LightLineSpacing()
+    if &expandtab
+        return &shiftwidth . " spaces"
+    else
+        return "tabs"
+    endif
+endfunction
