@@ -22,4 +22,5 @@ if which vim > /dev/null ; then
 fi
 # Ubuntu make installation of Ubuntu Make binary symlink
 PATH=/home/abigail/.local/share/umake/bin:$PATH
-
+# Add pip local install directory
+PATH="$HOME/.local/bin:$PATH"
