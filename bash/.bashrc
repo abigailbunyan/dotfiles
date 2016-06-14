@@ -115,3 +115,27 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# added by travis gem
+[ -f /home/abigail/.travis/travis.sh ] && source /home/abigail/.travis/travis.sh
+
+export PROJECT_HOME=$HOME/code
+. "$(which virtualenvwrapper.sh)"
+cd() {
+  if [ "$#" -eq 0 ]; then
+    if [ -n "$VIRTUAL_ENV" ]; then
+      builtin cd "$VIRTUAL_ENV"
+      return "$?"
+    else
+      builtin cd
+      return "$?"
+    fi
+  else
+    builtin cd "$@" || return "$?"
+    if [ -z "$VIRTUAL_ENV" ] && [ "$PWD" != "${PWD#$PROJECT_HOME/}" ]; then
+      project="${PWD#$PROJECT_HOME/}"
+      project="${project%%/*}"
+      [ -d "$WORKON_HOME/$project" ] && workon "$project"
+    fi
+  fi
+}
