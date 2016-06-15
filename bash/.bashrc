@@ -135,7 +135,7 @@ cd() {
     if [ -z "$VIRTUAL_ENV" ] && [ "$PWD" != "${PWD#$PROJECT_HOME/}" ]; then
       project="${PWD#$PROJECT_HOME/}"
       project="${project%%/*}"
-      [ -d "$WORKON_HOME/$project" ] && workon "$project"
+      [ -d "$WORKON_HOME/$project" ] && workon --no-cd "$project"
     fi
   fi
 }
