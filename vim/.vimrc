@@ -5,10 +5,8 @@ filetype plugin indent on
 
 set background=dark
 set modeline
-colorscheme solarized
 
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
       \ 'active': {
       \   'left': [
       \     [ 'mode', 'paste' ],
