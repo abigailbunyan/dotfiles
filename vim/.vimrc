@@ -7,6 +7,7 @@ set background=dark
 set modeline
 
 let g:lightline = {
+      \ 'colorscheme': '16color',
       \ 'active': {
       \   'left': [
       \     [ 'mode', 'paste' ],

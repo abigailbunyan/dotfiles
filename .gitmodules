@@ -28,9 +28,6 @@
 [submodule "vim/.vim/bundle/lightline.vim"]
 	path = vim/.vim/bundle/lightline.vim
 	url = git://github.com/itchyny/lightline.vim
-[submodule "vim/.vim/bundle/vim-colors-solarized"]
-	path = vim/.vim/bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
 [submodule "vim/.vim/bundle/syntastic"]
 	path = vim/.vim/bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
@@ -43,3 +40,6 @@
 [submodule "vim/.vim/bundle/vim-sleuth"]
 	path = vim/.vim/bundle/vim-sleuth
 	url = git://github.com/tpope/vim-sleuth.git
+[submodule "vim/.vim/bundle/gruvbox"]
+	path = vim/.vim/bundle/gruvbox
+	url = https://github.com/morhetz/gruvbox.git
